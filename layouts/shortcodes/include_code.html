@@ -1,3 +1,12 @@
 {{ $file := .Get "file" }}
-{{ $code := readFile (printf "content/%s" $file) }}
-<pre><code class="language-go">{{ $code | safeHTML }}</code></pre>
+{{ $lang := .Get "lang" | default (replaceRE `\..+$` "" $file) }}
+{{ $path := printf "content/%s" $file }}
+{{ $code := readFile $path }}
+
+/* 
+   highlight takes three args:
+   1) the source code,
+   2) the language (e.g. "go", "bash", "json"),
+   3) optional Chroma style override (empty = default from config).
+*/
+{{ highlight $code $lang "" }}

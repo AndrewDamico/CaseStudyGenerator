@@ -2,5 +2,26 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss-cli": "^11.0.1"
-  }
+  },
+  "name": "casestudygenerator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewDamico/CaseStudyGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewDamico/CaseStudyGenerator/issues"
+  },
+  "homepage": "https://github.com/AndrewDamico/CaseStudyGenerator#readme",
+  "description": ""
 }

@@ -8,4 +8,4 @@ title: 'Attributes'
 
 Here is the definition of the `CaseStudy` struct:
 
-{{< include_code file="attributes.go" >}}
+{{< include_code file="attributes.go" lang="go" >}}
