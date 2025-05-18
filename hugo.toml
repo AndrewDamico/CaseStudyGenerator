@@ -16,9 +16,7 @@ title   = "CaseStudyGenerator Docs"
 theme = "docuapi"
 
 [params]
-
   usePostCSS = true
-  # Enable Prism.js syntax highlighting
   prism        = true
   prismOptions = """
     {
