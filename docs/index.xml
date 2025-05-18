@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Case Study Generator</title>
+    <link>https://AndrewDamico.github.io/CaseStudyGenerator/</link>
+    <description>Recent content on Case Study Generator</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 May 2025 22:38:34 -0500</lastBuildDate>
+    <atom:link href="https://AndrewDamico.github.io/CaseStudyGenerator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Compile the App</title>
+      <link>https://AndrewDamico.github.io/CaseStudyGenerator/compiling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://AndrewDamico.github.io/CaseStudyGenerator/compiling/</guid>
+      <description>&lt;h1 id=&#34;how-to-compile-the-app&#34;&gt;How to Compile the App&lt;/h1&gt;&#xA;&lt;p&gt;This guide walks you through compiling &lt;strong&gt;Pitch-by-Pitch Pro&lt;/strong&gt; on different operating systems.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install Go&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Download and install Go for Windows from the &lt;a href=&#34;https://go.dev/dl/&#34;&gt;official website&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Open Command Prompt or PowerShell&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Clone the repository&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/AndrewDamico/Pitch-by-Pitch-Pro.git&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd Pitch-by-Pitch-Pro&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;&lt;strong&gt;Build the application&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;go build -o generator.exe ./app/scenariogenerator&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;5&#34;&gt;&#xA;&lt;li&gt;&lt;strong&gt;Run the executable&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./generator.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;macos&#34;&gt;macOS&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install Go&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Use Homebrew:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install go&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Open Terminal&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Clone the repository&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Attributes</title>
+      <link>https://AndrewDamico.github.io/CaseStudyGenerator/attributes/</link>
+      <pubDate>Sat, 17 May 2025 22:38:34 -0500</pubDate>
+      <guid>https://AndrewDamico.github.io/CaseStudyGenerator/attributes/</guid>
+      <description>&lt;h1 id=&#34;attributes&#34;&gt;Attributes&lt;/h1&gt;&#xA;&lt;p&gt;Here is the definition of the &lt;code&gt;CaseStudy&lt;/code&gt; struct:&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package scenariogenerator&#xD;&#xA;&#xD;&#xA;type CaseStudy struct {&#xD;&#xA;&#x9;industry        string&#xD;&#xA;&#x9;market          string&#xD;&#xA;&#x9;companySize     string&#xD;&#xA;&#x9;businessProblem string&#xD;&#xA;}&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Readme</title>
+      <link>https://AndrewDamico.github.io/CaseStudyGenerator/readme/</link>
+      <pubDate>Sat, 17 May 2025 22:38:34 -0500</pubDate>
+      <guid>https://AndrewDamico.github.io/CaseStudyGenerator/readme/</guid>
+      <description>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;&#xA;&lt;p&gt;Here is text&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Usage</title>
+      <link>https://AndrewDamico.github.io/CaseStudyGenerator/documentation/usage/</link>
+      <pubDate>Sat, 17 May 2025 22:38:34 -0500</pubDate>
+      <guid>https://AndrewDamico.github.io/CaseStudyGenerator/documentation/usage/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

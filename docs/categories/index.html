@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>
+      Categories
+    </title>
+    
+
+
+
+
+
+  
+  
+
+<link
+  href="/CaseStudyGenerator/styles/screen.min.e4c598f0c54a5b0795d73eecfee37be0e45f65bbebfad6d4aa5f289157ae5b56.css"
+  rel="stylesheet"
+  media="screen"
+  integrity="sha256-5MWY8MVKWweV1z7s/uN74ORfZbvr&#43;tbUql8okVeuW1Y=" />
+<link
+  href="/CaseStudyGenerator/styles/print.min.389eaecb1f1ce656c98cc017c4e08cb6ba26100a4b4763ac7eaa1195feb27518.css"
+  rel="stylesheet"
+  media="print"
+  integrity="sha256-OJ6uyx8c5lbJjMAXxOCMtromEApLR2OsfqoRlf6ydRg=" />
+
+    
+
+
+
+
+  
+
+<script
+  src="/CaseStudyGenerator/js/index.01cd09825b410cf389c38500360a116f7df6791cd2f18768de2be24c92204a16.js"
+  integrity="sha256-Ac0JgltBDPOJw4UANgoRb332eRzS8Ydo3iviTJIgShY="
+  defer></script>
+
+    
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body class="index" x-data="{ navOpen: false }" x-cloak>
+    <a
+      href="#"
+      id="nav-button"
+      @click="navOpen = !navOpen"
+      :class="{'open': navOpen }">
+      <span>
+        NAV
+        <img src="/CaseStudyGenerator/images/navbar.png" />
+      </span>
+    </a>
+    <div class="toc-wrapper" :class="{'open': navOpen }">
+      
+      <img src="/CaseStudyGenerator/images/logo.png" class="logo" />
+
+      
+        <div class="search" x-data="searchController">
+          <input
+            x-model.debounce.100ms="query"
+            type="search"
+            class="search"
+            id="input-search"
+            placeholder="Search" />
+          <ul
+            class="search-results visible"
+            x-show="results.length > 0"
+            x-transition.duration.700ms>
+            <template x-for="item in results">
+              <li>
+                <a x-text="item.title" :href="`#${item.id}`"></a>
+              </li>
+            </template>
+          </ul>
+        </div>
+      
+      
+  
+  
+    
+  
+  <ul
+    id="toc"
+    class="toc-list-h1"
+    x-data="tocController"
+    x-init="load([{&#34;id&#34;:&#34;how-to-compile-the-app&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;windows&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Windows&#34;},{&#34;id&#34;:&#34;macos&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;macOS&#34;},{&#34;id&#34;:&#34;linux&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Linux&#34;},{&#34;id&#34;:&#34;notes&#34;,&#34;level&#34;:2,&#34;sub&#34;:[],&#34;title&#34;:&#34;Notes&#34;}],&#34;title&#34;:&#34;How to Compile the App&#34;},{&#34;id&#34;:&#34;attributes&#34;,&#34;level&#34;:1,&#34;sub&#34;:[],&#34;title&#34;:&#34;Attributes&#34;},{&#34;id&#34;:&#34;welcome&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;sub&#34;:[]}],&#34;title&#34;:&#34;Welcome&#34;}])"
+    @scroll.window="onScroll()">
+    
+    <template x-for="row in rows">
+      <li>
+        <a
+          x-text="row.title"
+          @click="click(row)"
+          :href="`#${row.id}`"
+          class="toc-link"
+          x-bind="rowClass(row)"></a>
+        
+          <ul x-show="row.open" x-bind="transitions()" class="da-toc-list-h2">
+            <template x-for="row in row.sub">
+              <li>
+                <a
+                  x-text="row.title"
+                  @click="click(row)"
+                  :href="`#${row.id}`"
+                  class="toc-link"
+                  x-bind="rowClass(row)"></a>
+                
+                  <ul
+                    x-show="row.open"
+                    x-bind="transitions()"
+                    class="toc-list-h3">
+                    <template x-for="row in row.sub">
+                      <li>
+                        <a
+                          x-text="row.title"
+                          @click="click(row)"
+                          :href="`#${row.id}`"
+                          class="toc-link"
+                          x-bind="rowClass(row)"></a>
+                      </li>
+                    </template>
+                  </ul>
+                
+              </li>
+            </template>
+          </ul>
+        
+      </li>
+    </template>
+  </ul>
+
+      
+        <ul class="toc-footer">
+          <li class="toc-h1">
+            Translation
+          </li>
+          
+  <ul>
+    
+      <li class="toc-h2">
+        <a href="https://AndrewDamico.github.io/CaseStudyGenerator/nn/categories/">Latinum</a>
+      </li>
+    
+  </ul>
+
+
+        </ul>
+      
+      
+        <ul class="toc-footer">
+          
+            <li>
+              <a href='#'>Sign Up for a Developer Key</a>
+            </li>
+          
+            <li>
+              Documentation Powered by <a href="https://github.com/bep/docuapi">DocuAPI</a>
+            </li>
+          
+            <li>
+              Hugo Theme by <a href="https://github.com/bep">bep</a>
+            </li>
+          
+        </ul>
+      
+      
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+
+
+
+
+
+<h1 id="how-to-compile-the-app">How to Compile the App</h1>
+<p>This guide walks you through compiling <strong>Pitch-by-Pitch Pro</strong> on different operating systems.</p>
+<hr>
+
+
+
+
+  
+
+
+
+<h2 id="windows">Windows</h2>
+<ol>
+<li>
+<p><strong>Install Go</strong></p>
+<p>Download and install Go for Windows from the <a href="https://go.dev/dl/">official website</a>.</p>
+</li>
+<li>
+<p><strong>Open Command Prompt or PowerShell</strong></p>
+</li>
+<li>
+<p><strong>Clone the repository</strong></p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/AndrewDamico/Pitch-by-Pitch-Pro.git
+</span></span><span style="display:flex;"><span>cd Pitch-by-Pitch-Pro
+</span></span></code></pre></div><ol start="4">
+<li><strong>Build the application</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go build -o generator.exe ./app/scenariogenerator
+</span></span></code></pre></div><ol start="5">
+<li><strong>Run the executable</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>./generator.exe
+</span></span></code></pre></div><hr>
+
+
+
+
+  
+
+
+
+<h2 id="macos">macOS</h2>
+<ol>
+<li>
+<p><strong>Install Go</strong></p>
+<p>Use Homebrew:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install go
+</span></span></code></pre></div><ol start="2">
+<li>
+<p><strong>Open Terminal</strong></p>
+</li>
+<li>
+<p><strong>Clone the repository</strong></p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/AndrewDamico/Pitch-by-Pitch-Pro.git
+</span></span><span style="display:flex;"><span>cd Pitch-by-Pitch-Pro
+</span></span></code></pre></div><ol start="4">
+<li><strong>Build the application</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go build -o pitch-by-pitch-pro ./app/scenariogenerator
+</span></span></code></pre></div><ol start="5">
+<li><strong>Run the executable</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./pitch-by-pitch-pro
+</span></span></code></pre></div><hr>
+
+
+
+
+  
+
+
+
+<h2 id="linux">Linux</h2>
+<ol>
+<li>
+<p><strong>Install Go</strong></p>
+<p>Use your distro’s package manager, e.g., for Ubuntu:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install golang-go
+</span></span></code></pre></div><ol start="2">
+<li>
+<p><strong>Open Terminal</strong></p>
+</li>
+<li>
+<p><strong>Clone the repository</strong></p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/AndrewDamico/Pitch-by-Pitch-Pro.git
+</span></span><span style="display:flex;"><span>cd Pitch-by-Pitch-Pro
+</span></span></code></pre></div><ol start="4">
+<li><strong>Build the application</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go build -o pitch-by-pitch-pro ./app/scenariogenerator
+</span></span></code></pre></div><ol start="5">
+<li><strong>Run the executable</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./pitch-by-pitch-pro
+</span></span></code></pre></div><hr>
+
+
+
+
+  
+
+
+
+<h2 id="notes">Notes</h2>
+<aside class="success">
+Make sure your `GOPATH` and `GOROOT` environment variables are configured correctly.
+</aside>
+<ul>
+<li>For any issues, please check the <a href="https://github.com/AndrewDamico/Pitch-by-Pitch-Pro/issues">GitHub Issues</a> page.</li>
+</ul>
+<hr>
+<p>If you need additional help, contact the development team or consult the <a href="./docs">full documentation</a>.</p>
+
+  
+    
+
+
+
+  
+
+
+
+<h1 id="attributes">Attributes</h1>
+<p>Here is the definition of the <code>CaseStudy</code> struct:</p>
+
+
+<pre><code class="language-go">package scenariogenerator
+
+type CaseStudy struct {
+	industry        string
+	market          string
+	companySize     string
+	businessProblem string
+}
+</code></pre>
+
+  
+    
+
+
+
+  
+
+
+
+<h1 id="welcome">Welcome</h1>
+<p>Here is text</p>
+
+  
+    
+  
+
+      </div>
+      <div class="dark-box">
+        
+          <div
+            class="lang-selector"
+            x-data="langController"
+            x-init="initLangs([{&#34;key&#34;:&#34;go&#34;,&#34;name&#34;:&#34;Go&#34;},{&#34;key&#34;:&#34;shell&#34;,&#34;name&#34;:&#34;Shell&#34;},{&#34;key&#34;:&#34;python&#34;,&#34;name&#34;:&#34;Python&#34;}])">
+            <template x-for="(tab, index) in tabs">
+              <a
+                x-text="tab.name"
+                :class="{ 'active': tab.active }"
+                @click="changeLanguage(index)"></a>
+            </template>
+          </div>
+        
+      </div>
+    </div>
+    
+  </body>
+</html>

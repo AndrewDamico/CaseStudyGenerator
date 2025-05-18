@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on DocuAPI-døme</title>
-    <link>http://localhost:51857/CaseStudyGenerator/nn/categories/</link>
+    <link>http://localhost:1313/CaseStudyGenerator/nn/categories/</link>
     <description>Recent content in Categories on DocuAPI-døme</description>
     <generator>Hugo</generator>
     <language>nn</language>
-    <atom:link href="http://localhost:51857/CaseStudyGenerator/nn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/CaseStudyGenerator/nn/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

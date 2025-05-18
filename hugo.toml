@@ -1,6 +1,13 @@
 baseURL = "https://AndrewDamico.github.io/CaseStudyGenerator/"
 title   = "CaseStudyGenerator Docs"
 
+
+[build]
+  writeStats = true
+
+[minify]
+  disableXML = true
+
 [module]
   [[module.imports]]
     path    = "github.com/bep/docuapi/v2"
@@ -9,6 +16,8 @@ title   = "CaseStudyGenerator Docs"
 theme = "docuapi"
 
 [params]
+
+  usePostCSS = true
   # Enable Prism.js syntax highlighting
   prism        = true
   prismOptions = """
