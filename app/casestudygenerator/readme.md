@@ -1,15 +1,18 @@
-+++
-date = '2025-05-17T22:38:34-05:00'
-draft = false
-title = 'Readme'
-+++
+---
+title: "Welcome"
+weight: 10
+---
 
 # Welcome
 
-Here is text
-{{< include_code file="main.go" lang="go" >}}
+## Sample Text from real code
+> Here is text:
 
+{{< include_code file="content/main.go" lang="go" >}}
 
+this is more text 
+
+## Sample Go code written
 
 ```go
 

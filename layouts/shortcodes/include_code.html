@@ -1,12 +1,13 @@
 {{ $file := .Get "file" }}
 {{ $lang := .Get "lang" | default (replaceRE `\..+$` "" $file) }}
-{{ $path := printf "content/%s" $file }}
-{{ $code := readFile $path }}
+{{/* readFile now takes the path directly, relative to your Hugo root */}}
+{{ $code := readFile $file }}
 
-/* 
+{{/* 
    highlight takes three args:
-   1) the source code,
-   2) the language (e.g. "go", "bash", "json"),
-   3) optional Chroma style override (empty = default from config).
-*/
+     1) the source code,
+     2) the language (e.g. "go", "bash", "json"),
+     3) optional Chroma style override (empty = default from config).
+*/}}
+
 {{ highlight $code $lang "" }}

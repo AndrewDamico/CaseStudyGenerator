@@ -4,7 +4,7 @@ description: "Instructions for compiling Pitch-by-Pitch Pro on Windows, macOS, a
 icon: "build"
 toc: true
 draft: false
-weight: 10
+weight: 1000
 ---
 
 # How to Compile the App
