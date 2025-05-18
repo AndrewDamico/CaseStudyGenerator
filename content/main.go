@@ -1,20 +1,11 @@
-package main
+package scenariogenerator
 
 import (
 	"bufio"
 	"fmt"
-	"math/rand"
 	"os"
 	"strings"
-	"time"
 )
-
-type CaseStudy struct {
-	industry        string
-	market          string
-	companySize     string
-	businessProblem string
-}
 
 var industries []string
 var market []string
@@ -23,11 +14,6 @@ var businessProblem []string
 var teams []CaseStudy
 var nTeams uint = 2
 var studies []CaseStudy
-
-func generateRandomNumber(min, max int) int {
-	rand.Seed(time.Now().UnixNano())  // Initialize random seed based on the current time
-	return rand.Intn(max-min+1) + min // Generate a random number within the specified range
-}
 
 func addVariable(option []string, name string) []string {
 	clearScreen()

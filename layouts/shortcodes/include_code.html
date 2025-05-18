@@ -1,0 +1,3 @@
+{{ $file := .Get "file" }}
+{{ $code := readFile (printf "content/%s" $file) }}
+<pre><code class="language-go">{{ $code | safeHTML }}</code></pre>

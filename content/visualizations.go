@@ -1,9 +1,10 @@
-package main
+package scenariogenerator
 
 import (
 	"fmt"
-	"github.com/olekukonko/tablewriter"
 	"os"
+
+	"github.com/olekukonko/tablewriter"
 )
 
 func createTable() {

@@ -1,10 +1,11 @@
-package main
+package scenariogenerator
 
 import (
 	"bufio"
 	"fmt"
-	"github.com/inancgumus/screen"
 	"os"
+
+	"github.com/inancgumus/screen"
 )
 
 func clearScreen() {
